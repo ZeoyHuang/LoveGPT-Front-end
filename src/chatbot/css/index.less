@@ -1,0 +1,140 @@
+// @import url('./result.css');
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .root {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: no-wrap;
+    width: 932px;
+    justify-items: center;
+    justify-content: center;
+    & > div {
+      width: 100%;
+      height: 100%;
+      border-radius: var(--borderRadius);
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: column;
+      // background-color: var(--button);
+      .img {
+        cursor: pointer;
+        width: 100%;
+        height: 760px;
+        position: relative;
+        border-radius: var(--br);
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+        .i1 {
+          width: 100%;
+          height: 100%;
+          background: url("../images/i1.jpg");
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+        .i2 {
+          width: 100%;
+          height: 100%;
+          background: url("../images/i2.jpg");
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+        .text {
+          width: 100%;
+          position: absolute;
+          bottom: 0;
+          z-index: 999;
+          text-align: center;
+          .title {
+            font-family: var(--inter);
+            color: var(--t1);
+            font-size: 28px;
+            font-weight: 900;
+            line-height: 24px;
+            margin-bottom: 20px;
+          }
+          .t {
+            width: 100%;
+            height: 45px;
+            font-family: var(--inter);
+            font-size: 20px;
+            font-weight: 900;
+            color: var(--t2);
+            line-height: 40px;
+            background-color: var(--bg2);
+          }
+        }
+        .bg {
+          position: absolute;
+          left: 0;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          background: linear-gradient(
+            180deg,
+            var(--x1) 34.561%,
+            var(--x2) 92.666%
+          );
+        }
+      }
+      .button {
+        cursor: pointer;
+        width: 100%;
+        border-radius: var(--br);
+        background-color: var(--bu);
+        height: var(--bh);
+        text-align: center;
+        line-height: var(--bh);
+        font-family: var(--inter);
+        font-size: 28px;
+        font-weight: 900;
+        color: var(--t2);
+      }
+    }
+    .left {
+      margin-right: 92px;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width:650px) {
+  body {
+    .root {
+      div{
+        .img{
+          margin-bottom: 40px;
+        }
+      }
+      .left {
+        margin-right: 40px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 650px)and (min-width:0px) {
+  body {
+    .root {
+      flex-wrap: wrap;
+      div{
+        width: 420px;
+        .img{
+          margin-bottom: 40px;
+        }
+      }
+      .left{
+        margin-right: 0px;
+        margin-bottom: 40px;
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+:root {
+  --inter: 'Inter';
+  --black: "Black";
+  --regular: "Regular";
+}
+img {
+  width: 100%;
+  height: 100%;
+  vertical-align: top;
+}
+:root {
+  --bu: #d03d6b;
+  --bu2: #fe90a9;
+  --bu3: #202123;
+  --bg: #ffffff;
+  --bg2: #fe90a9;
+  --bg3: #ffc1c1;
+  --bg4: #c9c9d5;
+  --bg5: #202123;
+  --bg6: #343541;
+  --bg7: #f7f7f8;
+  --x1: rgba(238, 177, 171, 0);
+  --x2: #eeb1ab;
+  --x3: #343541;
+  --t1: #d03d6b;
+  --t2: #ffffff;
+  --t3: #000000;
+  --t4: #343541;
+  --t5: #9F9FA9;
+}
+:root {
+  --br: 45px;
+  --br2: 30px;
+  --br3: 7px;
+  --bh: 75px;
+  --pd: 30px;
+}
+.Emily {
+  width: calc(100% - 60px);
+  height: calc(100vh - 60px);
+  background: #F5F5F5;
+  padding: var(--pd);
+}

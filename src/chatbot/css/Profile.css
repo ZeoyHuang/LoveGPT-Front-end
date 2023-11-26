@@ -1,0 +1,124 @@
+.body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.root {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: no-wrap;
+  width: 932px;
+  justify-items: center;
+  justify-content: center;
+}
+.root > div {
+  width: 100%;
+  height: 100%;
+  border-radius: var(--borderRadius);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.root > div .img {
+  cursor: pointer;
+  width: 100%;
+  height: 760px;
+  position: relative;
+  border-radius: var(--br);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0px;
+}
+.root > div .img .i1 {
+  width: 100%;
+  height: 100%;
+  background: url("../images/i1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.root > div .img .i2 {
+  width: 100%;
+  height: 100%;
+  background: url("../images/i2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.root > div .img .text {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  z-index: 999;
+  text-align: center;
+}
+.root > div .img .text .title {
+  font-family: var(--inter);
+  color: var(--t2);
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+.root > div .img .text .t {
+  width: 100%;
+  height: 45px;
+  font-family: var(--inter);
+  font-size: 20px;
+  font-weight: 900;
+  color: var(--t4);
+  line-height: 40px;
+  background-color: var(--bg4);
+}
+.root > div .img .bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, var(--x1) 34.561%, var(--x3) 92.666%);
+}
+.root > div .button {
+  cursor: pointer;
+  width: 100%;
+  border-radius: var(--br);
+  background-color: var(--bu3);
+  height: var(--bh);
+  text-align: center;
+  line-height: var(--bh);
+  font-family: var(--inter);
+  font-size: 28px;
+  font-weight: 900;
+  color: var(--t2);
+}
+.root .left {
+  margin-right: 92px;
+}
+@media screen and (max-width: 1200px) and (min-width: 650px) {
+  .root div .img {
+    margin-bottom: 40px;
+  }
+  .root .left {
+    margin-right: 40px;
+  }
+}
+@media screen and (max-width: 650px) and (min-width: 0px) {
+  .root {
+    flex-wrap: wrap;
+  }
+  .root div {
+    width: 420px;
+  }
+  .root div .img {
+    margin-bottom: 40px;
+  }
+  .root .left {
+    margin-right: 0px;
+    margin-bottom: 40px;
+  }
+}

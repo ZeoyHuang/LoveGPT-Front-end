@@ -1,0 +1,339 @@
+.Emily .root {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 100%;
+}
+.Emily .root .left {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: var(--br);
+  overflow: hidden;
+}
+.Emily .root .left .img {
+  cursor: pointer;
+  width: 100%;
+  height: 888px;
+  position: relative;
+  border-radius: var(--br) var(--br) 0px 0px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Emily .root .left .img img {
+  width: 100%;
+  background: url("../images/i2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.Emily .root .left .img .text {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  z-index: 999;
+  text-align: center;
+}
+.Emily .root .left .img .text .title {
+  font-family: var(--inter);
+  color: var(--t2);
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+.Emily .root .left .img .bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, var(--x1) 34.561%, var(--x3) 92.666%);
+}
+.Emily .root .left .content {
+  padding: var(--pd);
+  background-color: var(--bg5);
+  height: calc(100% - var(--pd) - var(--pd));
+  width: calc(100% - var(--pd) - var(--pd));
+}
+.Emily .root .left .content div .title {
+  font-family: var(--inter);
+  font-size: 28px;
+  font-weight: 900;
+  color: var(--t5);
+  line-height: 64px;
+}
+.Emily .root .left .content div ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Emily .root .left .content div ul li > span:nth-child(1) {
+  font-family: var(--inter);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 32px;
+  color: var(--t2);
+}
+.Emily .root .left .content div ul li > span:nth-child(2) {
+  font-family: var(--inter);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  color: var(--t2);
+}
+.Emily .root .left .content div > span {
+  font-family: var(--inter);
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--t2);
+}
+.Emily .root .center {
+  width: 40%;
+}
+.Emily .root .center div .title {
+  font-family: var(--inter);
+  font-size: 32px;
+  font-weight: 900;
+  color: var(--t3);
+  margin: 40px 0px;
+}
+.Emily .root .center div ul {
+  padding-left: 20px;
+}
+.Emily .root .center div ul li {
+  font-family: var(--inter);
+  font-size: 16px;
+  font-weight: 400;
+  list-style: disc;
+}
+.Emily .root .center div .text {
+  font-family: var(--inter);
+  font-size: 16px;
+  font-weight: 400;
+}
+.Emily .root > .right {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.Emily .root > .right > div .progressBar {
+  padding: var(--pd);
+  background-color: var(--bg7);
+  border-radius: var(--br2);
+  margin-bottom: 20px;
+}
+.Emily .root > .right > div .progressBar .title {
+  font-family: var(--inter);
+  font-size: 28px;
+  font-weight: 900;
+  color: var(--t3);
+  margin-bottom: 20px;
+}
+.Emily .root > .right > div .progressBar ul li .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--inter);
+  color: var(--t3);
+  font-size: 16px;
+  font-weight: 400;
+}
+.Emily .root > .right > div .progressBar ul li .buttom {
+  width: 100%;
+  height: 20px;
+  border-radius: var(--br3);
+  background-color: var(--bg4);
+  position: relative;
+}
+.Emily .root > .right > div .progressBar ul li .buttom div {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--t3);
+}
+.Emily .root > .right > div .progressBar ul li:nth-child(1) div > div {
+  left: 30%;
+}
+.Emily .root > .right > div .progressBar ul li:nth-child(2) div > div {
+  left: 20%;
+}
+.Emily .root > .right > div .progressBar ul li:nth-child(3) div > div {
+  left: 16%;
+}
+.Emily .root > .right > div .progressBar ul li:nth-child(4) div > div {
+  left: 36%;
+}
+.Emily .root > .right > div .progressBar ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.Emily .root > .right > div > .list {
+  padding: var(--pd);
+  background-color: var(--bg7);
+  border-radius: var(--br2);
+  margin-bottom: 20px;
+}
+.Emily .root > .right > div > .list .title {
+  font-family: var(--inter);
+  font-size: 28px;
+  font-weight: 900;
+  color: var(--t3);
+  margin-bottom: 20px;
+}
+.Emily .root > .right > div > .list ul {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.Emily .root > .right > div > .list ul li {
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  font-family: var(--inter);
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 10px;
+  background-color: var(--bg4);
+  padding: 0px 30px;
+  margin-bottom: 10px;
+}
+.Emily .root > .right > div > .list ul li:not(:last-child) {
+  margin-right: 10px;
+}
+.Emily .root > .right > .button {
+  height: 90px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.Emily .root > .right > .button > .left {
+  width: 20%;
+  line-height: 90px;
+  background-color: var(--bg4);
+  border-radius: var(--br) 0 0 var(--br);
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+.Emily .root > .right > .button > .left .leftArrow {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Emily .root > .right > .button > .left .leftArrow div {
+  width: 28px;
+  height: 48px;
+  background: url("../images/left.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.Emily .root > .right > .button .right {
+  width: 75%;
+  height: 90px;
+  line-height: 90px;
+  background-color: var(--t3);
+  border-radius: 0 var(--br) var(--br) 0;
+  display: flex;
+  align-items: center;
+}
+.Emily .root > .right > .button .right .btn {
+  cursor: pointer;
+  width: 80%;
+  font-family: var(--inter);
+  font-size: 32px;
+  font-weight: 900;
+  background-color: var(--t3);
+  color: var(--t2);
+  text-align: center;
+}
+.Emily .root > .right > .button .right .rightArrow {
+  width: 20%;
+  height: 100%;
+  line-height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.Emily .root > .right > .button .right .rightArrow div {
+  width: 28px;
+  height: 48px;
+  background: url("../images/right.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.Emily .root > div:not(:last-child) {
+  margin-right: 50px;
+}
+@media screen and (min-width: 1600px) {
+  .Emily {
+    max-width: calc(100% - 60px);
+    flex-wrap: no-wrap;
+  }
+  .Emily .root .rigth .button .left {
+    margin-right: 20px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+  .Emily .root .left {
+    width: 40%;
+    margin-bottom: 40px;
+  }
+  .Emily .root .center {
+    margin-bottom: 40px;
+    width: 55%;
+    margin-right: 0px !important;
+  }
+  .Emily .root .right {
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1100px) and (max-width: 1200px) {
+  .Emily .root .left {
+    width: 40%;
+    margin-bottom: 20px;
+  }
+  .Emily .root .center {
+    margin-bottom: 20px;
+    width: 50%;
+  }
+  .Emily .root .right {
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 1100px) {
+  .Emily .root {
+    align-items: center;
+    justify-content: center;
+  }
+  .Emily .root .left {
+    width: 95%;
+    margin-right: 0px !important;
+  }
+  .Emily .root .center {
+    margin-bottom: 20px;
+    margin-right: 0px !important;
+    width: 95%;
+  }
+  .Emily .root .right {
+    width: 95%;
+    height: auto;
+  }
+}
